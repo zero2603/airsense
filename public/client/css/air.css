@@ -1,0 +1,293 @@
+*{
+    margin: 0
+}
+body{
+    overflow-x: hidden
+}
+/* header */
+#header-img{
+background-image: url('image/background.jpg');
+background-position: bottom;
+background-size: cover;
+padding: 8%;
+text-align: center;
+margin-top: -16px;
+}
+#header-menu{
+display: flex;
+}
+#header-menu .menu{
+    padding: 0;
+    list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+}
+#header-img img{
+    height: 100%;
+    width: 33%;
+    margin-top: 3%;
+    position: relative;
+}
+#header-menu img{
+    height: 100%;
+}
+
+.menu-item{
+    display: inline-block;
+    text-decoration: none;
+    padding: 11px 20px 
+}
+.menu-item a{
+    text-decoration: none
+}
+.menu-item:hover {
+    background-color: rgb(217, 219, 217);
+}
+.menu-item:hover a{
+    text-decoration: none
+}
+#img-198{
+    position: absolute;
+    margin-left: 34%;
+    margin-top: -8%;
+    line-height: 4px;
+}
+#header-footer-hot{
+    color: black;
+    background-color: yellow;
+    padding:3px 8px;
+}
+#text_update{
+    line-height: 5px;
+    color: white;
+    margin-top: 3%
+}
+/* ------ */
+/* sử dụng nhiều */
+.text-header{
+    text-align: center;
+    padding-top: 3%;
+}
+.text-header hr{
+    height: 3px;
+    width: 20%;
+    background-color: blue;
+    margin: 0 auto;
+}
+.s-footer{
+    background: linear-gradient(to right,#02882a,#06e45b);
+    padding: 20px;
+    text-align: center;
+    margin-top: -42px;
+}
+.footer-normal{
+    color: white
+}
+.footer-bold{
+    font-weight: 500;
+    color: white
+}
+a.footer-vang{
+    color: rgb(223, 223, 5);
+}
+.text-card-vang{
+    color: #07b64a
+}
+.btn-footer{
+    border: none;
+}
+/* ----- */
+/* chọn điểm đo  */
+#Chon_diem_do{
+    text-align: center
+}
+#Chon_diem_do_body h1{
+background-color: yellowgreen;
+padding: 10px 20px;
+display: inline-block;
+margin-top: 10px;
+}
+#Chon_diem_do_body{
+    margin: 3%;
+}
+#Chon_diem_do_body select{
+    width: 95%;
+    margin-top: 1%;
+}
+#Chon_diem_do_body img{
+    width: 85%;
+    height: 90%;
+    margin: 3% 5%;
+}
+#Nong_do img{
+    width: 85%;
+    height: 80%;
+    margin: 3% 8%;
+}
+#Chon_diem_do_body #AQI,
+#Chon_diem_do_body #Nong_do{
+background-color: rgb(238, 237, 237);
+}
+/* ------ */
+/* bản đồ */
+#Ban_do_body{
+    margin-top: 5%
+}
+#map_iframe{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+  
+}
+/* -------- */
+/* bảng quy đổi giá trị AQI */
+
+table th,td{
+border-collapse: collapse;
+border: 1px solid rgb(223, 223, 223);
+padding: 5px
+}
+
+#table-th{
+    background-color: rgb(192, 190, 190);
+}
+#Bang_quy_doi_table{
+    margin-top: 5%;
+    margin-bottom: 10%
+}
+#Bang_quy_doi_table table{
+    margin: 0 auto
+}
+.p-long{
+    text-align: center
+}
+#xanh,#vang,#da_cam,#do,#nau{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#xanh{
+    background-color: blue;
+} 
+#vang{
+    background-color: yellow;
+}
+#da_cam{
+    background-color: orange;
+}
+#do{
+    background-color: red;
+}
+#nau{
+    background-color: brown;
+}
+/* ----- */
+/* tin tức */
+#Tin_tuc{
+    background-color: rgb(228, 227, 227);
+    text-align: center
+}
+#Tin_tuc #xem-them{
+background-color: rgb(22, 179, 22);
+color: white;
+display: inline-block;
+border-radius: 20px;
+padding: 8px 40px;
+margin: 22px;
+}
+#Tin_tuc_body{
+    margin-top: 5%
+}
+#Tin_tuc_body img{
+    width: 95%;
+}
+.s-footer.s{
+    margin-top: 22px
+}
+/* ------ */
+/* our team  */
+#our_team{
+    text-align: center
+}
+#our_team hr{
+    background-color: #04eb17;
+    width: 8%;
+}
+#our_team_body{
+    margin-top: 5%;
+}
+/* ------- */
+/* footer */
+#footer{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+#footer-text{
+    padding-top: 5%;
+    padding-left: 1%;
+    margin-left: 5px;
+    margin-top: 8%
+}
+.btn-footer{
+    border-radius: 10px;
+}
+#footer-text img{
+width: 120%;
+}
+#list-footer,
+.list-social
+{
+    list-style: none;
+    padding: 0
+}
+#list-footer i{
+    color: #04eb17
+}
+#footer hr{
+    background-color: rgb(127, 128, 129)
+}
+.list-social li{
+display: inline-block;
+}
+.list-social li i{
+    color: gray;
+    padding: 8px
+}
+.list-social li:hover i{
+    color: rgb(34, 34, 158);
+ 
+}
+#footer .list-social li i{
+ padding: 2px;
+    color: white
+}
+#footer .list-social li:hover i{
+    color: rgb(19, 83, 221);
+    font-size: 25px
+}
+#footer #input-email{
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    color: black;
+opacity: 0.5;
+width: 90%;
+}
+#footer #btn-subcribe{
+    padding: 5px 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: rgb(27, 211, 27);
+}
+#footer-link{
+    color: white;
+    opacity: 0.5;
+    display: block;
+    padding-left: 5px;
+  
+}
+#header-img img {
+    margin-top: 4%;
+    width: 30%;
+}
