@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title','List User')
+@section('title','List Users')
 <div>
   @section('content')
 
@@ -24,8 +24,8 @@
             <thead>
               <tr>
                 <th>Name</th>
-                <th width=10%>Edit</th>
-                <th width=10%>Delete</th>
+                <th width=5% style="text-align:center">Edit</th>
+                <th width=10% style="text-align:center">Delete</th>
 
               </tr>
             </thead>
@@ -36,13 +36,13 @@
                 <td>
                   {{$item->name}}
                 </td>
-                <td>
+                <td style="text-align:center">
                   <form method="GET" action={{url('/admin/user/'.$item->id.'/edit')}}>
                     @csrf
                     <button type="submit">Edit</button>
                   </form>
                 </td>
-                <td>
+                <td style="text-align:center">
                   <form method="POST" action={{url('/admin/user/'.$item->id)}}>
                     @method('DELETE')
                     @csrf

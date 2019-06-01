@@ -69,7 +69,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Select</h6>
             <a class="collapse-item" href="{{url('/admin/user/create')}}">Create</a>
-            <a class="collapse-item" href="{{url('/admin/user/')}}">Edit</a>
+            <a class="collapse-item" href="{{url('/admin/user/')}}">List Users</a>
           </div>
         </div>
       </li>
