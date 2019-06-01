@@ -17,4 +17,18 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'AdminCo');
+// ]);
+//Route::get('/posts','PostController@index');
+Route::get('/create','PostController@create');
+Route::post('/edit','PostController@store');
+Route::get('/master',[
+    'as'=>'master',
+    'uses'=>'Postcontroller@index'
+]);
+Route::get('/editpost/{id}','PostController@edit');
+Route::put('/update/{id}','PostController@update');
+Route::delete('master/{id}','PostController@destroy');
+// Route::get('/blabla',function(){
+//     return view('admin.404');
+// });
