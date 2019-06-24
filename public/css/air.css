@@ -22,6 +22,7 @@ display: flex;
   display: inline-block;
   text-decoration: none;
   float: right;
+  margin-left: 306px;
 }
 #header-img img{
     height: 100%;
@@ -33,6 +34,28 @@ display: flex;
     height: 100%;
 }
 
+.map .col-sm-4 b{
+    background-color: cornflowerblue;
+    color: white;
+    display: block;
+    padding: 3px;
+}
+.map .col-sm-4 b i{
+    padding: 0px 5px;
+}
+.map .col-sm-4 h3{
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+.map .col-sm-4 img{
+    width: 98%;
+    margin-top: 14%;
+}
+.map .col-sm-4{
+    padding-right: 3%;
+}
 .menu-item{
     display: inline-block;
     text-decoration: none;
@@ -49,8 +72,8 @@ display: flex;
 }
 #img-198{
     position: absolute;
-    margin-left: 34%;
-    margin-top: -8%;
+    margin-left: 42%;
+    margin-top: -10%;
     line-height: 4px;
 }
 #header-footer-hot{
@@ -120,10 +143,11 @@ margin-top: 10px;
     height: 90%;
     margin: 3% 5%;
 }
-#Nong_do img{
-    width: 85%;
-    height: 80%;
-    margin: 3% 8%;
+#Nong_do .row,
+#AQI .row{
+    height: 285px;
+    margin-top: 10px;
+    margin-bottom: 5px
 }
 #Chon_diem_do_body #AQI,
 #Chon_diem_do_body #Nong_do{
@@ -134,11 +158,15 @@ background-color: rgb(238, 237, 237);
 #Ban_do_body{
     margin-top: 5%
 }
+#map{
+    margin-top: 1%;
+    width: 100%;
+    font-size: 14px;
+}
 #map_iframe{
     margin: 0 auto;
     display: block;
-    width: 80%;
-  
+    width: 95%;
 }
 /* -------- */
 /* bảng quy đổi giá trị AQI */

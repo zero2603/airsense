@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -20,10 +20,10 @@
 </head>
 <body>
     <!-- header -->
-    <div class="container">
+    <div class="airsense">
     <div id="header">
         <div id="header-menu">
-          <img src="image/logo.PNG" alt="">
+          <img src="image/logoo.PNG" alt="">
             <ul class="menu">
                 <li class="menu-item"><a href="#">TRANG CHỦ</a></li>
                 <li class="menu-item"><a href="#">TIN TỨC</a></li>
@@ -34,7 +34,7 @@
                 <li class="menu-item"><a href="#">NEWS</a></li>
             </ul>
         </div>
-        <div id="header-img">
+        {{-- <div id="header-img">
         
             <h2>Air Quality</h2>
             <h2>GERMAN EMBASSY HANOI</h2>
@@ -55,23 +55,35 @@
             <span id="header-footer-hot">Hot!</span><span class="footer-bold"> Airsense</span><span
                 class="footer-normal"> is an air monitor solution. </span><a href="#" class="footer-vang"> Contact us
                 now!</a>
+        </div> --}}
+    </div>
+
+    {{-- bản đồ --}}
+<div class="map">
+    <div class="row">
+        <div class="col-sm-8">
+            <iframe id="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.945831156634!2d105.80194400045046!3d21.022816135640994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1552926175824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-4">
+            <b><i class="fa fa-bars"></i>Chọn điểm đo</b>
+            <select name="" id="map">
+                <option value="">Chi cục bảo vệ môi trường</option>
+            </select>
+            <p>Số liệu đến ngày 07-06-2019</p>
+            <h3>AQI 91</h3>
+            <img src="image/anh13.PNG" alt="">
         </div>
     </div>
+</div>
+
     <!-- chọn điểm đo -->
     <div id="Chon_diem_do">
         <div class="text-header">
-            <h3>Chọn điểm đo</h3>
-            <hr>
         </div>
         <div id="Chon_diem_do_body">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-12 col-lg-6">
                     <div id="AQI">
-                        <select>
-                            <option value="aqi">162BF00E</option>
-                        </select>
-                        <br>
-                        <h1>AQI 51</h1>
                         <p>Chỉ số AQI chi tiết theo thành phần không khí</p>
                         <div class="row">
                             <img src="image/anh1.PNG" alt="">
@@ -82,37 +94,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12 col-lg-6">
                     <div id="Nong_do">
-                        <select>
-                            <option value="aqi">Chi cục bảo vệ môi trường</option>
-                        </select>
-                        <br>
-                        <h1>Nồng độ</h1>
                         <p>Biểu đồ chi tiết thông số từng thành phần không khí</p>
                         <div class="row">
-                            <img src="image/anh13.PNG" alt="">
+                            <img src="image/anh17.PNG" alt="">
                         </div>
 
                         <div class="row">
-                            <img src="image/anh13.PNG" alt="">
+                            <img src="image/anh17.PNG" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- bản đồ -->
-    <div id="Ban_do">
-        <div class="text-header">
-            <h3>Bản đồ</h3>
-            <hr>
-        </div>
-        
-        <div id="Ban_do_body">
-                <iframe id="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.945831156634!2d105.80194400045046!3d21.022816135640994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1552926175824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </div>
+
     <!-- bảng quy đổi giá trị AQI -->
     <div id="Bang_quy_doi">
         <div class="text-header">
@@ -214,7 +211,7 @@
         </div>
         <div id="our_team_body">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <img src="image/anh9.PNG" alt="">
                     <p class="text-card-vang">Sandra Ferguson</p>
                     <p>CEO,Founder</p>
@@ -226,7 +223,7 @@
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <img src="image/anh10.PNG" alt="">
                     <p class="text-card-vang">Ronald Chen</p>
                     <p>Marketer</p>
@@ -238,7 +235,7 @@
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <img src="image/anh11.PNG" alt="">
                     <p class="text-card-vang">Frances Watson</p>
                     <p>Support Operator</p>
@@ -250,7 +247,7 @@
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <img src="image/anh12.png" alt="">
                     <p class="text-card-vang">Joe Myers</p>
                     <p>Head of Business Development</p>
