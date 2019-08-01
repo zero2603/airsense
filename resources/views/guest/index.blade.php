@@ -3,269 +3,233 @@
 <head>
     <title>Airsense</title>
     <link rel="stylesheet" href="{{url('/css/air.css')}}">
+    <link rel="stylesheet" href="{{url('/css/custom.css')}}">
     <link rel="stylesheet" href="{{url('/css/responsive.css')}}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> --}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!-- header -->
-    <div class="airsense">
-    <div id="header">
-        <div id="header-menu">
-          <img src="image/logoo.PNG" alt="">
-            <ul class="menu">
-                <li class="menu-item"><a href="#">TRANG CHỦ</a></li>
-                <li class="menu-item"><a href="#">TIN TỨC</a></li>
-                <li class="menu-item"><a href="#">VỀ CHÚNG TÔI</a></li>
-                <li class="menu-item"><a href="#">ENGLISH</a></li>
-                <li class="menu-item"><a href="#">ĐĂNG NHẬP</a></li>
-                <li class="menu-item"><a href="#">TESTIMONIALS</a></li>
-                <li class="menu-item"><a href="#">NEWS</a></li>
-            </ul>
-        </div>
-        {{-- <div id="header-img">
-        
-            <h2>Air Quality</h2>
-            <h2>GERMAN EMBASSY HANOI</h2>
-            <img src="image/unhealthy.png" alt="">
-            <div id="img-198">
-                <p>Air quality Index</p>
-                <h3>198</h3>
-                <p>Unhealthy</p>
+   <div class="container">
+       {{-- Header --}}
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-brand mb-0 h1">
+                <a href="/">
+                    <img src="image/logoo.PNG" alt="AirSense">
+                </a>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#">ENGLISH</a>
+                    </li>
+                </ul>
             </div>
-            <div id="text_update">
-                <p>Update at: 2019-03-18 19:34:08</p>
-                <p>Humidity: 80%</p>
-                <p>Temperature: 20%</p>
-            </div>
-    
-        </div>
-        <div class="s-footer">
-            <span id="header-footer-hot">Hot!</span><span class="footer-bold"> Airsense</span><span
-                class="footer-normal"> is an air monitor solution. </span><a href="#" class="footer-vang"> Contact us
-                now!</a>
-        </div> --}}
-    </div>
-
-    {{-- bản đồ --}}
-<div class="map">
-    <div class="row">
-        <div class="col-sm-8">
-            <iframe id="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.945831156634!2d105.80194400045046!3d21.022816135640994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1552926175824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="col-sm-4">
-            <b><i class="fa fa-bars"></i>Chọn điểm đo</b>
-            <select name="" id="map">
-                <option value="">Chi cục bảo vệ môi trường</option>
-            </select>
-            <p>Số liệu đến ngày 07-06-2019</p>
-            <h3>AQI 91</h3>
-            <img src="image/anh13.PNG" alt="">
-        </div>
-    </div>
-</div>
-
-    <!-- chọn điểm đo -->
-    <div id="Chon_diem_do">
-        <div class="text-header">
-        </div>
-        <div id="Chon_diem_do_body">
+        </nav>
+        {{-- Main Page --}}
+        <div class="container" id="main">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div id="AQI">
-                        <p>Chỉ số AQI chi tiết theo thành phần không khí</p>
-                        <div class="row">
-                            <img src="image/anh1.PNG" alt="">
-                        </div>
+                <div class="col-sm-7">
+                    <div id="map-canvas"></div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="mb-2">
+                        <b><i class="fa fa-bars"></i> Chọn điểm đo</b>
+                    </div>
+                    <select class="custom-select mb-4">
+                        <option value="">Chi cục bảo vệ môi trường</option>
+                    </select>
+                    <p>Số liệu đến ngày 07-06-2019</p>
+                    <div class="text-center" id="aqi_value">
+                        <h3>AQI 91</h3>
+                    </div>
+                    <div id="chart_div"></div>
+                </div>
+            </div>
 
-                        <div class="row">
-                            <img src="image/anh1.PNG" alt="">
+            <div class="row mt-4">
+                <div class="col-sm-6  text-center">
+                    <h5>Chỉ số AQI chi tiết theo thành phần không khí</h5>
+                    <div id="chart_div_1"></div>
+                    <div id="chart_div_2"></div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h5>Biểu đồ chi tiết thông số từng thành phần không khí</h5>
+                    <div id="chart_div_3"></div>
+                    <div id="chart_div_4"></div>
+                </div>
+            </div>
+
+            <div class="row mt-4" style="justify-content: center;">
+                <div>
+                    <div class="text-header mb-4">
+                        <h3>Bảng quy đổi giá trị AQI </h3>
+                        <hr>
+                    </div>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Giá trị AQI</th>
+                                <th scope="col">Đánh giá</th>
+                                <th scope="col">Ảnh hưởng tới sức khỏe</th>
+                                <th scope="col">Màu sắc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">0-50</th>
+                                <td>TỐT</td>
+                                <td>Không ảnh hưởng đến sức khỏe</td>
+                                <td><p id="xanh">XANH</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">51-100</th>
+                                <td>TRUNG BÌNH</td>
+                                <td>Nhóm nhạy cảm nên hạn chế thời gian ở ngoài</td>
+                                <td><p id="vang"> VÀNG</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">101-200</th>
+                                <td>KÉM</td>
+                                <td>Nhóm nhạy cảm nên hạn chế thời gian ở ngoài</td>
+                                <td><p id="da_cam"> DA CAM</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">201-300</th>
+                                <td>XẤU</td>
+                                <td>Nhóm nhạy cảm tránh ra ngoài,những người khác hạn chế ở ngoài</td>
+                                <td><p id="do">ĐỎ</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Từ 301</th>
+                                <td>NGUY HẠI</td>
+                                <td>Mọi người nên ở trong nhà</td>
+                                <td><p id="nau">NÂU</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row mt-4" style="justify-content: center">
+                <div class="text-header">
+                    <h3>Tin tức</h3>
+                    <hr>
+                    <p>Tin tức về môi trường tại Việt Nam</p>
+                </div>
+                <div id="Tin_tuc_body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="image/anh3.png" alt="">
+                            <p>Industrial Wind Farms</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/anh4.png" alt="">
+                            <p>Industrial Wind Farms</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/anh5.png" alt="">
+                            <p>Industrial Wind Farms</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="image/anh6.png" alt="">
+                            <p>Industrial Wind Farms</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/anh7.png" alt="">
+                            <p>Industrial Wind Farms</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="image/anh8.png" alt="">
+                            <p>Industrial Wind Farms</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-success">
+                            <b>XEM THÊM</b>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div id="Nong_do">
-                        <p>Biểu đồ chi tiết thông số từng thành phần không khí</p>
-                        <div class="row">
-                            <img src="image/anh17.PNG" alt="">
-                        </div>
+            </div>
 
-                        <div class="row">
-                            <img src="image/anh17.PNG" alt="">
-                        </div>
+            <div class="mt-4 mb-4" style="justify-content: center">
+                <div class="text-header mb-4">
+                    <h3>Our Team</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <img src="image/anh9.PNG" alt="">
+                        <p class="text-card-vang">Sandra Ferguson</p>
+                        <p>CEO,Founder</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <img src="image/anh10.PNG" alt="">
+                        <p class="text-card-vang">Ronald Chen</p>
+                        <p>Marketer</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <img src="image/anh11.PNG" alt="">
+                        <p class="text-card-vang">Frances Watson</p>
+                        <p>Support Operator</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <img src="image/anh12.png" alt="">
+                        <p class="text-card-vang">Joe Myers</p>
+                        <p>Head of Business Development</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- bảng quy đổi giá trị AQI -->
-    <div id="Bang_quy_doi">
-        <div class="text-header">
-            <h3>Bảng quy đổi giá trị AQI </h3>
-            <hr>
-        </div>
-        <div id="Bang_quy_doi_table">
-            <table>
-                <tr id="table-th">
-                    <th>Giá trị AQI</th>
-                    <th>Đánh giá</th>
-                    <th>Ảnh hưởng sức khỏe</th>
-                    <th>Màu sắc</th>
-                </tr>
-                <tr>
-                    <td>0-50</td>
-                    <td>TỐT</td>
-                    <td>Không ảnh hưởng đến sức khỏe</td>
-                    <td ><p id="xanh">XANH</p> </td>
-                </tr>
-                <tr>
-                    <td>51-100</td>
-                    <td>TRUNG BÌNH</td>
-                    <td>Nhóm nhạy cảm nên hạn chế thời gian ở ngoài</td>
-                    <td><p id="vang"> VÀNG</p></td>
-                </tr>
-                <tr>
-                    <td>101-200</td>
-                    <td>KÉM</td>
-                    <td>Nhóm nhạy cảm nên hạn chế thời gian ở ngoài</td>
-                    <td><p id="da_cam"> DA CAM</p></td>
-                </tr>
-                <tr>
-                    <td>201-300</td>
-                    <td>XẤU</td>
-                    <td>Nhóm nhạy cảm tránh ra ngoài,những người khác hạn chế ở ngoài</td>
-                    <td><p id="do">ĐỎ</p></td>
-                </tr>
-                <tr>
-                    <td>Từ 301</td>
-                    <td>NGUY HẠI</td>
-                    <td>Mọi người nên ở trong nhà</td>
-                    <td><p id="nau">NÂU</p></td>
-                </tr>
-            </table>
-            <p class="p-long">(*)Nhóm nhạy cảm bao gồm: trẻ em, người già và những người mắc bệnh hô hấp</p>
-        </div>
-    </div>
-    <!-- tin tức -->
-    <div id="Tin_tuc">
-        <div class="text-header">
-            <h3>Tin tức</h3>
-            <hr>
-            <p>Tin tức về môi trường tại Việt Nam</p>
-        </div>
-        <div id="Tin_tuc_body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="image/anh3.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="image/anh4.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="image/anh5.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="image/anh6.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="image/anh7.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="image/anh8.png" alt="">
-                    <p>Industrial Wind Farms</p>
-                </div>
-            </div>
-          
-                  <a id="xem-them" class="btn">XEM THÊM</a>
-        
-        </div>
-        <div class="s-footer s">
-            <span class="footer-bold">Make the right choice! </span><span class="footer-normal">Do you need a consultat
-                on?</span><a href="#" class="footer-vang"> Call us now!</a>
-        </div>
-    </div>
-    <!-- our team -->
-    <div id="our_team">
-        <div class="text-header">
-            <h3>Our Team</h3>
-            <hr>
-        </div>
-        <div id="our_team_body">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img src="image/anh9.PNG" alt="">
-                    <p class="text-card-vang">Sandra Ferguson</p>
-                    <p>CEO,Founder</p>
-                    <ul class="list-social">
-                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img src="image/anh10.PNG" alt="">
-                    <p class="text-card-vang">Ronald Chen</p>
-                    <p>Marketer</p>
-                    <ul class="list-social">
-                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img src="image/anh11.PNG" alt="">
-                    <p class="text-card-vang">Frances Watson</p>
-                    <p>Support Operator</p>
-                    <ul class="list-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img src="image/anh12.png" alt="">
-                    <p class="text-card-vang">Joe Myers</p>
-                    <p>Head of Business Development</p>
-                    <ul class="list-social">
-                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer -->
-    <div id="footer">
-        <div id="footer-text">
-            <div class="row">
+   </div>
+   <div id="footer">
+        <div class="container">
+            <div class="row pt-4">
                 <div class="col-sm-3">
                     <b>About Us</b>
                     <p>Lorem ipsum dolor sit amet consectetur,
@@ -276,29 +240,6 @@
                 </div>
                 <div class="col-sm-3">
                     <b>Nhà tài trợ</b>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="image/anh3.PNG" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="image/anh4.PNG" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="image/anh5.PNG" alt="">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="image/anh6.PNG" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="image/anh7.PNG" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="image/anh8.png" alt="">
-                        </div>
-                    </div>
                 </div>
                 <div class="col-sm-3">
                     <b>Contact</b>
@@ -327,9 +268,82 @@
             </div>
         </div>
         <hr>
-        <a href="#" id="footer-link">2019 All Rights Reserved</a>
+        <div class="container">
+            <a href="#" id="footer-link">2019 All Rights Reserved</a>
+        </div>
     </div>
-    </div>
+
+
+    {{-- Map Script --}}
+    {{-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAC740QttEVaZ87JB75x5aQmAa_PPRAuU&callback=initMap">
+    </script> --}}
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script>
+        if (document.getElementById('map-canvas')){
+            // Coordinates to center the map
+            var myLatlng = new google.maps.LatLng(21.5, 105.8);
+
+            // Other options for the map, pretty much selfexplanatory
+            var mapOptions = {
+                zoom: 14,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            // Attach a map to the DOM Element, with the defined settings
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        }
+    </script>
+    {{-- Chart --}}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'line']});
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'X');
+            data.addColumn('number', 'AQI');
+
+            data.addRows([
+                [0, 0],   [1, 10],  [2, 23],  [3, 17],  [4, 18],  [5, 9],
+                [6, 11],  [7, 27],  [8, 33],  [9, 40],  [10, 32], [11, 35],
+                [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
+                [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
+                [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
+                [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
+                [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
+                [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
+                [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
+                [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
+                [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
+                [66, 70], [67, 72], [68, 75], [69, 80]
+            ]);
+
+            var options = {
+                // hAxis: {
+                // title: 'Time'
+                // },
+                vAxis: {
+                    title: 'PM2.5 AQI'
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            var chart1 = new google.visualization.LineChart(document.getElementById('chart_div_1'));
+            var chart2 = new google.visualization.LineChart(document.getElementById('chart_div_2'));
+            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div_3'));
+            var chart4 = new google.visualization.LineChart(document.getElementById('chart_div_4'));
+
+            chart.draw(data, options);
+            chart1.draw(data, options);
+            chart2.draw(data, options);
+            chart3.draw(data, options);
+            chart4.draw(data, options);
+        }
+    </script>
 </body>
 
 </html>

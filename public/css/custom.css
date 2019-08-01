@@ -1,0 +1,13 @@
+#main {
+    margin-top: 50px
+}
+
+#aqi_value {
+    background-color: yellow;
+    padding: 10px;
+}
+
+#map-canvas{
+    height: 100%;
+    width: 100%;
+}
